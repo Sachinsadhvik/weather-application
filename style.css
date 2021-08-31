@@ -1,0 +1,43 @@
+#sac{display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:5%;
+    }
+
+ /* body {
+     background-color:#acb4cf ;
+ }     */
+ body{
+    background: url('https://cdn.wallpapersafari.com/61/41/c6lhFM.jpg') ;
+    background-size: cover;
+     -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+         /* background-color:navy; */
+    }
+
+ #clouds{
+     text-align: end;
+display:inline;
+font-size: 250%;
+ }
+
+  
+ .navbar-brand{
+     justify-content: center;
+ }
+ 
+ .card{
+border: 5px solid rgb(203, 214, 224,0.7);
+border-radius:5%;
+background-color: rgb(136, 206, 250,0.7); 
+ }
+ #score{
+    text-align: left;
+ }
+ #error {
+     text-align: center;
+     color:red;
+    background-color:whitesmoke;
+ }
