@@ -1,3 +1,7 @@
+$( document ).ready( 
+   weatherApp()
+);
+
 var top=document.getElementById("country")
 
 function weatherApp(){
