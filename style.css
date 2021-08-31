@@ -4,10 +4,10 @@
     margin-top:5%;
     }
 
- /* body {
-     background-color:#acb4cf ;
- }     */
- body{
+ body,html {
+    height: 100%;margin: 0;
+ }    
+ .bg{
     background: url('https://cdn.wallpapersafari.com/61/41/c6lhFM.jpg') ;
     background-size: cover;
      -moz-background-size: cover;
@@ -15,6 +15,7 @@
     -o-background-size: cover;
     background-repeat: no-repeat;
          /* background-color:navy; */
+         height: 100%;
     }
 
  #clouds{
