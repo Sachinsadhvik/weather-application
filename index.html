@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo18s0YpTBbDtv3XUhKjbq7OiWKf-lmQgd6fQn50v-Xe_cmGfr9ygcfoGSbQ3vqFmJqMA&usqp=CAU">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather  </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <nav class="navbar" style=" background:rgba(205, 200, 219, 0.7);">
+    <a class="navbar-brand text-dark" style=" font-family: serif"><h2>Forecast  Predictor</h2></a>
+  </nav>
+  <nav class="navbar navbar-light justify-content-center " style=" background-color:rgba(190, 24, 38, 0.4)" >
+    <div class="form-inline">
+      <input class="form-control mr-sm-2" id="name" name="name" aria-label="Search" value=" ">
+      <button class="btn btn-light my-2 my-sm-0" type="submit" onclick="weatherApp()">Search</button>
+    </div>
+  </nav>
+  <div id="error"> </div>
+  <div id="sac">
+  <div class="card text-center text-white"style=" width: 22rem;">
+    <div class="card-body">
+      <h5 id="country" class="text-dark font-weight-bold" style=" font-family: Verdana, Geneva, Tahoma, sans-serif"> Delhi IN</h5>
+      <span id="imagee">`<img src="https://openweathermap.org/img/w/04d.png" style="max-width:100%"/> </span>
+     &nbsp; &nbsp; &nbsp; <span class="card-text text-dark" id="clouds">25</span> 
+    <span id="units" onclick="myFun()" type="button" style=" color:black"> °C | °F</span>
+   <div class="text-dark font-weight-bold"style=" font-family: monospace;">
+    feels-like:<span id="score" >27 </span> &nbsp; <div id="desc" style="font-size:120%; font-family: monospace;">overcast clouds</div> </div>
+  
+     </div >
+    <ul class="list-group list-group-flush">
+     <li class="list-group-item" id="realc" style="background:lightcoral; font-family: monospace">Precipitation:90%</li>
+   <li class="list-group-item" id="humidity" style="background:lightpink; font-family: monospace">Humidity:65%</li>
+   <li class="list-group-item" id="winds"  style="background:limegreen; font-family: monospace">wind speed:2.04mph</li>
+    </ul>
+    <!-- <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div> -->
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
